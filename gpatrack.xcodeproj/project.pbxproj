@@ -11,6 +11,9 @@
 		CE7DB54C28C98BB4008CF2F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7DB54B28C98BB4008CF2F9 /* ContentView.swift */; };
 		CE7DB54E28C98BB7008CF2F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7DB54D28C98BB7008CF2F9 /* Assets.xcassets */; };
 		CE7DB55128C98BB7008CF2F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7DB55028C98BB7008CF2F9 /* Preview Assets.xcassets */; };
+		CE8DD83A28DCD168007E0820 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DD83928DCD168007E0820 /* DataController.swift */; };
+		CE8DD83D28DCD414007E0820 /* GradeData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE8DD83B28DCD414007E0820 /* GradeData.xcdatamodeld */; };
+		CE8DD84028DCD8CB007E0820 /* AddGradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DD83F28DCD8CB007E0820 /* AddGradeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		CE7DB54B28C98BB4008CF2F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE7DB54D28C98BB7008CF2F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7DB55028C98BB7008CF2F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE8DD83928DCD168007E0820 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		CE8DD83C28DCD414007E0820 /* GradeData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GradeData.xcdatamodel; sourceTree = "<group>"; };
+		CE8DD83F28DCD8CB007E0820 /* AddGradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGradeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				CE7DB54928C98BB4008CF2F9 /* gpatrackApp.swift */,
-				CE7DB54B28C98BB4008CF2F9 /* ContentView.swift */,
+				CE8DD83E28DCD897007E0820 /* Views */,
+				CE8DD83828DCD145007E0820 /* DataModel */,
 				CE7DB54D28C98BB7008CF2F9 /* Assets.xcassets */,
 				CE7DB54F28C98BB7008CF2F9 /* Preview Content */,
 			);
@@ -65,6 +72,24 @@
 				CE7DB55028C98BB7008CF2F9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE8DD83828DCD145007E0820 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE8DD83928DCD168007E0820 /* DataController.swift */,
+				CE8DD83B28DCD414007E0820 /* GradeData.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		CE8DD83E28DCD897007E0820 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE7DB54B28C98BB4008CF2F9 /* ContentView.swift */,
+				CE8DD83F28DCD8CB007E0820 /* AddGradeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8DD83A28DCD168007E0820 /* DataController.swift in Sources */,
 				CE7DB54C28C98BB4008CF2F9 /* ContentView.swift in Sources */,
 				CE7DB54A28C98BB4008CF2F9 /* gpatrackApp.swift in Sources */,
+				CE8DD83D28DCD414007E0820 /* GradeData.xcdatamodeld in Sources */,
+				CE8DD84028DCD8CB007E0820 /* AddGradeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +365,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE8DD83B28DCD414007E0820 /* GradeData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE8DD83C28DCD414007E0820 /* GradeData.xcdatamodel */,
+			);
+			currentVersion = CE8DD83C28DCD414007E0820 /* GradeData.xcdatamodel */;
+			path = GradeData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CE7DB53E28C98BB4008CF2F9 /* Project object */;
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21G83" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ClassList" representedClassName="ClassList" syncable="YES" codeGenerationType="class">
+        <attribute name="class_name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="GradeList" representedClassName="GradeList" syncable="YES" codeGenerationType="class">
+        <attribute name="class_name" optional="YES" attributeType="String"/>
+        <attribute name="grade_date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="grade_item" optional="YES" attributeType="String"/>
+        <attribute name="grade_score" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="ClassList" positionX="-45" positionY="0" width="128" height="44"/>
+        <element name="GradeList" positionX="-18" positionY="36" width="128" height="89"/>
+    </elements>
+</model>
